@@ -2,6 +2,17 @@
 URL con el gateway:
 http://localhost:8090/api/citibanamex/sucursal/buscar
 
+Body de tipo JSON  para la localizacion:
+{
+    "gps": {
+            "latitud":19.491896383762942, 
+            "longitud":-99.13486024559889
+            },
+    "codigoPostal":"07730",
+    "estadoDelegacion":"ciudad de méxico"
+}
+
+
 Se obtuvo la información del JSON con resttemplate como un string y se realizo un análisis del texto de Procesamiento del Lenguaje Natural donde se remplazaron datos que estaban en UTF-8 a ASCII y los datos que estan entre corchetes se extrajeron mediante un split.
 [
           "278",
